@@ -15,7 +15,7 @@ function registerRules() {
     ],
     actions: [
 		//Use a regex to redirect to non-mobile page
-		new RedirectByRegEx({from:'^(.*)(\.m\.)(.*)', to:"$1.$3"})
+		new RedirectByRegEx({from:'^(.*)(\.m\.wikipedia)(.*)', to:"$1.wikipedia$3"})
     ]
   };
 
